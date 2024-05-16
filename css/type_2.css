@@ -4,7 +4,7 @@
 .gnb:hover ul {
   height: 180px;
 }
-.gnb:hover li:hover a {
+.gnb:hover > li:hover > a {
   color: red;
 }
 .gnb ul {
