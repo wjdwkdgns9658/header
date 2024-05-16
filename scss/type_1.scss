@@ -58,3 +58,33 @@
 //         }
 //     }
 // }
+
+#hd{
+    a{
+        text-decoration: none;
+    }
+    .gnb{
+        .d1{
+            .gnb_d1_a{
+               font-size: 1.2em;
+               color:black;
+            }
+            ul{
+                //소메뉴
+                min-width: 80px;
+                white-space: nowrap;
+                background-color: black !important;
+                &.leftul{
+                    left:-2rem;
+                }               
+                li{
+                    a{
+                        font-size: 0.85rem;
+                        color:white !important;
+                    }
+                }
+            }
+
+        }
+    }
+}
