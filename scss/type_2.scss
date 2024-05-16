@@ -40,3 +40,30 @@
 //     opacity: 0;
 
 // }
+
+.gnb{
+    a:hover{
+        color: red !important;
+    }
+
+    &:hover{
+        ul{
+            height: 180px;
+        }
+        
+        li:hover{
+            a{
+                color: red;
+            }
+        }
+        
+    }
+
+    ul{
+        top: 100%;
+        min-width:120px;
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+}

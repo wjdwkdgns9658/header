@@ -1,32 +1,16 @@
-/* .inner {
-  max-width: 1440px;
-  margin: 0 auto;
+.gnb a:hover {
+  color: red !important;
 }
-
-.mr-auto {
-  margin-right: auto;
+.gnb:hover ul {
+  height: 180px;
 }
-
-.d-flex {
-  display: flex;
+.gnb:hover li:hover a {
+  color: red;
 }
-
-.text-gray {
-  color: #666;
-}
-
-.bg-gray {
-  background-color: #ccc;
-}
-
-.round50 {
-  border-radius: 50px;
-}
-
-.sr_only {
-  position: absolute;
-  width: 0;
+.gnb ul {
+  top: 100%;
+  min-width: 120px;
   height: 0;
   overflow: hidden;
-  opacity: 0;
-} */
+  transition: 0.5s;
+}
