@@ -1,12 +1,74 @@
 #hd{
+    
     h1,
     .iconMenu{
         width: 0
     }
+    a {
+        color: black;
+        text-decoration: none;
+    }
     h1{
         a{
             white-space: nowrap;
+        }
+    }
+    .gnb {
+        .gnb_li{
+            &:hover{
+                .gnb_a {
+                    color: red; //활성화
+                }
+                .gnb_ul{                    
+                    max-height: 180px;
+                    border-bottom-width: 1px;
+                    border-radius: 0 0 30px 30px;
+                    transition: max-height 0.5s ease-in-out, border-bottom-width 0.5s ease-in-out, border-radius 0.5s ease-in-out 0.3s;
+                }
+
+            }
+        }
+        .gnb_a {
+            font-size: 1.2rem;
+        }
+    
+        .gnb_ul{
+            min-width: 10rem;
+            // padding: 0 1.5rem;
+            background-color: white;
+            margin-top: -1px;
+            border: solid#ccc;
+            border-top: 0;
+            border-bottom: 1px solid #ccc;
+            border-radius: 0;
+            overflow: hidden;
+            //모든 소메뉴,대메뉴를 기준으로 정가운데로
+            transform: translateX(-50%);
+            left: 50%;
+            //드롭다운 애니메이션
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out, border-bottom-width 0.5s ease-in-out, border-radius 0.5s ease-in-out;
+            transition-delay: 0.3s;
+
+            &:after,
+            &:before{
+                content: "";
+                display: block;
+                height: 1rem;
+            }
+            &:after{
+                border-bottom: 1px none;
+            }
+            
             
         }
     }
+    .iconMenu {
+        i {
+            white-space: nowrap;
+        }
+    }
+
+
 }
