@@ -37,9 +37,9 @@
             // padding: 0 1.5rem;
             background-color: white;
             margin-top: -1px;
-            border: solid#ccc;
+            border: 1px solid#ccc;
             border-top: 0;
-            border-bottom: 1px solid #ccc;
+            border-bottom: 0;
             border-radius: 0;
             overflow: hidden;
             //모든 소메뉴,대메뉴를 기준으로 정가운데로
@@ -48,7 +48,7 @@
             //드롭다운 애니메이션
             max-height: 0;
             overflow: hidden;
-            transition: max-height 0.5s ease-in-out, border-bottom-width 0.5s ease-in-out, border-radius 0.5s ease-in-out;
+            transition: 0.5s; border-radius: 0.5s;
             transition-delay: 0.3s;
 
             &:after,
@@ -58,7 +58,8 @@
                 height: 1rem;
             }
             &:after{
-                border-bottom: 1px none;
+                border-bottom: 1px solid#ccc;
+                
             }
             
             
